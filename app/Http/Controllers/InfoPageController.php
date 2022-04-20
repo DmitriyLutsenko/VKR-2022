@@ -17,7 +17,7 @@ class InfoPageController extends Controller
     }
 
     public function get_page ($slug) {
-        return view('pages.infopage', [
+        return view('front.pages.infopage', [
             'infoPage' => InfoPage::where('slug', '=', $slug)->firstOrFail()
         ]);
     }

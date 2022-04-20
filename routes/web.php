@@ -15,7 +15,7 @@ use App\Http\Controllers\InfoPageController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('front.main.home');
 });
 
 Route::get('/{slug}', [InfoPageController::class, 'get_page'])->name('infopage');
