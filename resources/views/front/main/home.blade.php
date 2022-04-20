@@ -75,24 +75,7 @@
 @endsection
 
 @section('block-reviews')
-				<div class="box box_right">
-					<h2 class="heading">Отзывы</h2>
-					<div class="box__crop">
-						<ul class="box__list">
-							<li class="box__item">
-								<div class="box__item--item"><a href="http://themes.diafan.ru/shopcomp/faq/otzyvy-voprosy-i-otvety-budut-napisany-na-etoy-str3/" class="content">Отзывы, вопросы и ответы будут написаны на этой странице. Любой объем текста можно написать, но желательно уложиться в несколько абзацев, ведь пользователи интернета...</a>
-									<div class="box__item__info">31 января 2015 г.</div>
-								</div>
-								<div class="box__item--item"><a href="http://themes.diafan.ru/shopcomp/faq/otzyvy-voprosy-i-otvety-budut-napisany-na-etoy-str/" class="content">Отзывы, вопросы и ответы будут написаны на этой странице. Любой объем текста можно написать, но желательно уложиться в несколько абзацев, ведь пользователи интернета...</a>
-									<div class="box__item__info">04 января 2015 г.</div>
-								</div>
-							</li>
-							<li class="box__item">
-								<div class="box__item--item"><a href="http://themes.diafan.ru/shopcomp/faq/vyzvala-mastera-na-dom-dlya-diagnosti-noutbuka-pri/" class="content">Отзывы, вопросы и ответы будут написаны на этой странице. Любой объем текста можно написать, но желательно уложиться в несколько абзацев, ведь пользователи интернета...</a>
-									<div class="box__item__info">Олеся 03 января 2015 г.</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
+	@if(!empty($reviews))
+		@include('front.reviews.reviews', ['reviews'=>$reviews])
+	@endif
 @endsection

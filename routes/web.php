@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InfoPageController;
 
 /*
@@ -14,9 +16,7 @@ use App\Http\Controllers\InfoPageController;
 |
 */
 
-Route::get('/', function () {
-    return view('front.main.home');
-});
+Route::get('/', [HomeController::class, 'home']);
 
 Route::get('/{slug}', [InfoPageController::class, 'get_page'])->name('infopage');
 
