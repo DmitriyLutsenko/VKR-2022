@@ -36,36 +36,22 @@
 						</center>
 					</span>
 				</a>
-				@yield('header-navigation')
-				<ul class="nav">
-					
-					<li class="nav__item">
-						<a href="/about-us/">О магазине</a>
-					</li>
-					
-					<li class="nav__item">
-						<a href="http://themes.diafan.ru/shopcomp/shop/">Каталог продукции</a>
-						<ul class="nav__popup">
-							<li class="nav__popup__item"><a href="http://themes.diafan.ru/shopcomp/shop/protsessory/">Процессоры</a></li>
-							<li class="nav__popup__item"><a href="http://themes.diafan.ru/shopcomp/shop/materinskie-platy-/">Материнские платы</a></li>
-							<li class="nav__popup__item"><a href="http://themes.diafan.ru/shopcomp/shop/videokarty/">Видеокарты</a></li>
-							<li class="nav__popup__item"><a href="http://themes.diafan.ru/shopcomp/shop/zhestkie-diski/">Жесткие диски</a></li>
-							<li class="nav__popup__item"><a href="http://themes.diafan.ru/shopcomp/shop/moduli-pamyati/">Модули памяти</a></li>
-							<li class="nav__popup__item"><a href="http://themes.diafan.ru/shopcomp/shop/bloki-pitaniya/">Блоки питания</a></li>
-						</ul>
-					</li>
 
-					<li class="nav__item">
-						<a href="/delivery-and-payment">Доставка и оплата</a>
-					</li>
+				<x-main-menu></x-main-menu>
 
-					<li class="nav__item">
-						<a href="/reviews/">Отзывы</a>
-					</li>
-
-					<li class="nav__item">
-						<a href="/contacts">Контакты</a></li>
+			<ul class="nav">
+{{--
+			<li class="nav__item">
+				<a href="http://themes.diafan.ru/shopcomp/shop/">Каталог продукции</a>
+				<ul class="nav__popup">
+					<li class="nav__popup__item">
+						<a href="http://themes.diafan.ru/shopcomp/shop/protsessory/">Процессоры</a>
+					</li>		
 				</ul>
+			</li>
+--}}
+	</ul>
+
 				<div class="tel">+7 999-999-99-99
 					<br>
 				</div>

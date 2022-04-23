@@ -13,7 +13,7 @@ class HomeController extends Controller
 		$reviews = Reviews::orderBy('created_at','desc')
 		->take(10)
 		->get();
-
+			
 		return view('front.main.home', [ 'reviews'=>$reviews ]);
 	}
 }
